@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusMind - Pomodoro Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="pomodoro-container">
+        <div class="top-bar">
+            <button id="dark-mode-toggle" class="icon-btn">🌙</button>
+        </div>
+
+        <h1 id="status-text">¡A trabajar!</h1>
+
+        <div class="settings">
+            <input type="number" id="user-minutes" placeholder="Min" min="1" max="120">
+            <button id="set-time">Set</button>
+        </div>
+
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+
+        <div class="controls">
+            <div class="main-buttons">
+                <button id="start" class="btn-primary">Iniciar</button>
+                <button id="pause">Pausar</button>
+                <button id="reset">Reiniciar</button>
+            </div>
+            <button id="mute" class="secondary-btn">🔊 Sonido: ON</button>
+        </div>
+
+        <div class="history-container">
+            <h3>Historial de sesiones</h3>
+            <ul id="history-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
